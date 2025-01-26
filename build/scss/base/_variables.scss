@@ -1,0 +1,39 @@
+// COLOR SCHEME
+$clr-dark: #383030;
+$clr-light: #FDFAF6;
+
+$clr-primary: rgb(253, 211, 125);
+$clr-color-faded: rgba(253, 210, 125, .2);
+
+$clr-secondary: #77C6B3;
+$clr-secondary-faded: rgba(119, 198, 179, .2);
+
+
+
+// FONT SIZES
+$fs-sml: 1rem;
+$fs-med: 1.4rem; 
+$fs-lrge: 2rem;
+$fs-xlrge: 2.4rem;
+$page-title: 3.5rem;
+
+
+
+// FONT WEIGHT
+$fw-light: 200;
+$fw-regular: 400;
+$fw-bold: 600;
+$fw-black: 900;
+
+
+// FONT FAMILY
+$ff-heading: 'HeyWowHeading', sans-serif;
+$ff-body: 'HeyWowBody', sans-serif;
+
+
+
+// RESPONSIVE SIZES
+$mobile: 560px;
+$tablet: 1360px;
+$laptop: 1800px;
+$desktop: 2200px;

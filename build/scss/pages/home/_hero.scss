@@ -1,0 +1,124 @@
+#hero {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+    pointer-events: none;
+
+
+    @media screen and (max-width:$tablet) {
+       justify-content: center;
+       align-items: center;
+    }
+
+
+    .hero-svg {
+        position: absolute;
+
+        &.star-svg {
+            animation: rotate-full-circle 10s linear infinite;
+            bottom: 2rem;
+            right: 2rem;
+            width: 250px;
+            z-index: 2;
+
+            @media screen and (max-width:$laptop) {
+                width: 200px;
+            }
+
+        @media screen and (max-width:$tablet) {
+           display: none;
+        }
+        }
+
+
+        &.square-svg {
+            width: 100vw;
+            height: 35vh;
+            object-fit: cover;
+            object-position: center;
+            top: 0;
+            left: 0;
+            opacity: .08;
+            @media screen and (max-width:$tablet) {
+                height: 100vh;
+            }
+        }
+    }
+
+
+    .hero-title {
+        position: relative;
+        overflow: hidden;
+        width: fit-content;
+        width: 100%;
+        padding: 2rem 1.6rem;
+
+        @media screen and (max-width:$tablet) {
+            padding: 1rem;
+            background: $clr-light;
+            padding: 4rem 2rem;
+        }
+        @media screen and (max-width:$mobile) {
+            padding: 3rem 1rem;
+        }
+        
+
+
+    .hero-title--sml {
+        font-size: 1.4rem;
+        padding: 1rem 1.4rem;
+        background: $clr-primary;
+        border-radius: 50px;
+        width: fit-content;
+        margin-bottom: 1rem;
+        transform: scale(0);
+        animation: scale-entrance .5s ease;
+        animation-delay: 1.5s;
+        animation-fill-mode: forwards;
+        border: solid 2px $clr-dark;
+        @media screen and (max-width:$mobile) {
+            font-size: 1.2rem;
+        }
+    }
+
+    .hero-title--lg {
+        font-size: 10vw;
+        letter-spacing: -5px;
+        overflow: hidden;
+        z-index: 10;
+
+        @media screen and (max-width:$tablet) {
+            font-size: 5rem;
+        }
+        @media screen and (max-width:$mobile) {
+            font-size: 3.25rem;
+        }
+
+        div {
+            overflow: hidden;
+
+            .hero-title__words {
+                display: inline-block;
+                transform: translateY(100%);
+                animation: slide-up-entrance 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay:1.75s; 
+                color: $clr-dark;  
+                
+                &.animation-delay {
+                    animation-delay: 2s;
+                }
+            }
+
+
+        }
+    }
+
+}
+
+}
+

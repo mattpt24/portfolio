@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>mpt - Front End Developer & Designer</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Experienced front-end web developer specializing in React, JavaScript, UI/UX. Passionate about creating user-friendly and visually appealing websites.">
+    <meta name="keywords" content="front-end developer, web design"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Matt Persell-Thompson - Web Developer">
+    <meta property="og:description" content="Check out my portfolio!">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="./dist/css/styles.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- GOOGLE ICONS  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+
+    <!-- ENTRANCE ANIMATION BLOCKS  -->
+    <div class="entrance-blocks">
+        <div class="entrance-block block-1"></div>
+        <div class="entrance-block block-2"></div>
+    </div>
+    
+
+    
+    <!-- NAVBAR  -->
+    <header class="navbar">
+        <nav>
+            <a class="site-logo triggers-page-transition" href="/">mpt</a>
+            <button class="open-menu-btn" aria-label="Open Navigation Menu"><span class="material-symbols-outlined">menu</span></button>
+        </nav>
+    </header>
+    <!--  -->
+
+
+
+    <!-- DEVICE MENU  -->
+    <div  aria-expanded="false" class="dropdown-menu">
+
+        <div class="dropdown-menu-column">
+
+            <!-- CLOSE DROPDOWN MENU BTN  -->
+            <button class="close-menu-btn" aria-label="Close dropdown menu"><i class="fa-solid fa-x"></i></button>
+
+
+            <div class="dropdown-menu__content-container">
+
+                <!-- SITE NAVIGATION  -->
+                <ul class="nav-list">
+                    <li class="nav-link">
+                        <a class="fade-in" tabindex="-1" href="/about.html">About</a>
+                        <a class="triggers-page-transition" style="opacity:1"aria-hidden="true" tabindex="-1" href="/about.html">About</a>
+                    </li>     
+                    <li class="nav-link">
+                        <a class="fade-in" tabindex="-1" href="/portfolio.html">Portfolio</a>
+                        <a class="triggers-page-transition" style="opacity:1"aria-hidden="true" tabindex="-1" href="/portfolio.html">Portfolio</a>
+                    </li>  
+                    <li class="nav-link">
+                        <a class="fade-in" tabindex="-1" href="/contact.html">Contact</a>
+                        <a class="triggers-page-transition" style="opacity:1"aria-hidden="true" tabindex="-1" href="/contact.html">Contact</a>
+                    </li>               
+                    <li class="nav-link">
+                        <a class="fade-in" tabindex="-1" href="/contact.html">Download CV</a>
+                        <a class="triggers-page-transition" style="opacity:1" aria-hidden="true" tabindex="-1" href="/contact.html">Download CV</a>
+                    </li>     
+                </ul>
+
+                <!-- DROPDOWN MENU BOTTOM  -->
+                 <div class="dropdown-menu-bottom">
+
+                    <!-- SOCIALS / CONTACT DETAILS -->
+                    <div class="dropdown-menu__social-icons fade-in">
+                        <a tabindex="-1" aria-label="Link to my Github Profile" class="dropdown-menu__social-icon" href=""><i class="fa-brands fa-github"></i></a>
+                        <a tabindex="-1" aria-label="Link to my LinkedIn Profile" class="dropdown-menu__social-icon" href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a tabindex="-1" aria-label="Link to call me" class="dropdown-menu__social-icon" href="tel:07557335725"><i class="fa-solid fa-phone"></i></a>
+                        <a tabindex="-1" aria-label="Link to email me" class="dropdown-menu__social-icon" href="mailto:mattypt@hotmail.co.uk"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+
+                    <!-- PREVIOUS SITES  -->
+                    <button  tabindex="-1" class="btn btn--dark back-in-time-btn fade-in" aria-label="Open modal displaying my previous portfolio sites"><i class="fa-solid fa-rotate"></i> Go back in time</button>
+
+                 </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- IMAGE SIDE -->
+        <div class="dropdown-menu-column">
+            <img src="https://images.unsplash.com/photo-1594904351111-a072f80b1a71?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Lines of code">
+        </div>
+        <!--  -->
+
+    </div>
+    <!--  -->
+
+
+
+
+
+
+    <!-- HERO SECTION  -->
+    <section id="hero">
+        
+
+        <img aria-hidden="true" class="hero-svg star-svg" src="assets/images/star.svg" alt="">
+        <img aria-hidden="true" class="hero-svg square-svg" src="assets/images/square.svg" alt="">
+
+
+        <div class="hero-title">
+        <h3 class="hero-title--sml"">Hi I'm Matt 👋</h3>
+        <h1 class="hero-title--lg">
+            <div><span class="hero-title__words">Front End Developer</span></div>
+            <div><span class="hero-title__words animation-delay"><span class="yellow-txt">& Web Designer</span><span class="yellow-txt">.</span</span></div>
+        </h1>
+        </div>
+
+
+    </section>
+    <!--  -->
+
+
+    
+
+
+
+
+    <script src="./dist/js/all.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script>
+        AOS.init(
+            {
+                duration: 1200,
+                once: true,
+            }
+        );
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+
+// BASE
+@import "../scss/base/_defaults";
+@import "../scss/base/_variables";
+@import "./base/fonts";
+@import "../scss/base/_mixins" ;
+@import "../scss/base/animations";
+
+
+// LAYUT 
+@import './layout/layout';
+
+// COMPONENTS
+@import "../scss/components/navbar";
+@import "./components/footer";
+@import "../scss/components/_buttons";
+@import "../scss/components/entrance-animation";
+@import "./components/dropdown-menu";
+
+
+// PAGES
+@import "../scss/pages/home/hero";
+@import "../scss/pages/about/about";
+@import "../scss/pages/portfolio/portfolio";
+@import "../scss/pages/contact/contact";
+
+
+
+
+
+
+

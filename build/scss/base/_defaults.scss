@@ -1,0 +1,96 @@
+@use 'variables' as *;
+
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // border: solid 1px red;
+}
+
+/* Tone down the animation to avoid vestibular motion triggers like scaling or panning large objects. */
+@media (prefers-reduced-motion) {
+  * {
+    scroll-behavior: none;
+  }
+}
+
+
+*[role="button"]:focus-visible {
+  border: solid 5px $clr-secondary!important;
+}
+
+a:focus-visible,
+input:focus-visible,
+button:focus-visible {
+  border: solid 5px $clr-secondary!important;
+}
+
+
+body {
+  font-family: $ff-body;
+  line-height: 1.5;
+  background: $clr-light;
+}
+
+/* Only allow content to be seen by screen-readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+
+  &:focus {
+    height: auto;
+    width: auto;
+    padding: 1rem;
+    display: block;
+    clip: auto;
+    z-index: 999;
+    background-color: $clr-secondary;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  line-height: 1.2;
+  font-family: $ff-heading;
+}
+
+a {
+  text-decoration: none;
+  color: $clr-dark;
+}
+
+
+button {
+  border: none;
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.yellow-txt {
+  color: $clr-primary;
+}
+
+.opacity-down {
+  opacity: 0.3;
+}
+
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+
+.current-page {
+  color: white!important;
+  pointer-events: none;
+}

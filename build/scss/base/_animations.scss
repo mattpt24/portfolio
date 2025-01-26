@@ -1,0 +1,39 @@
+
+@keyframes scale-entrance {
+    0% {
+       transform: scale(0);
+    }
+    50% {
+      transform: scale(1.1);
+   }
+    100% {
+       transform: scale(1);
+    }
+}
+
+@keyframes slide-up-entrance {
+    from {
+       transform: translateY(200%);
+    }
+    to {
+       transform: translateY(0);
+    }
+}
+
+
+@keyframes fade-in-entrance {
+    from {
+       opacity: 0;  
+    }
+    
+}
+
+
+@keyframes rotate-full-circle {
+      from {
+         transform: rotate(0deg);
+      }
+      to {
+         transform: rotate(360deg);
+      }
+}
