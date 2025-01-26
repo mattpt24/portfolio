@@ -14,7 +14,7 @@ pointer-events: none;
     position: absolute;
     height: 50vh;
     width: 100%;
-    background: $clr-dark;
+    background: rgb(214, 214, 214);
     animation: entrance-blocks-animation 1s ease;
     animation-fill-mode: forwards;
     animation-delay: .5s;

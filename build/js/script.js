@@ -11,7 +11,7 @@ const dropdownSocialsContainer = document.querySelectorAll(".dropdown-menu__soci
 const dropdownSocials = document.querySelectorAll(".dropdown-menu__social-icons .dropdown-menu__social-icon");
 const dropdownGoBackBtn = document.querySelector(".dropdown-menu .back-in-time-btn");
 const dropdownLinksToEnter = document.querySelectorAll(".fade-in");
-
+const dropdownMenuImageOverlay = document.querySelector(".dropdown-menu__image-overlay");
 
 
 // OPEN 
@@ -27,15 +27,17 @@ openDropdownMenuBtn.addEventListener("click", () => {
     dropdownGoBackBtn.setAttribute("tabindex", '0');
 
     setTimeout(() => {
+        dropdownMenuImageOverlay.classList.add("image-overlay--removed")
         dropdownLinksToEnter.forEach((x, index) => {
-            setTimeout(() => x.classList.add("dropdown-menu-links--fade-in"), index * 80);
+            setTimeout(() => x.classList.add("dropdown-menu-links--fade-in"), index * 70);
         });
-    }, 600);
+    }, 800);
 } )
 
 
 // CLOSE 
 closeDropdownMenuBtn.addEventListener("click", () => {
+    dropdownMenuImageOverlay.classList.remove("image-overlay--removed")
     dropdownLinksToEnter.forEach((x, index) => {
         setTimeout(() => x.classList.remove("dropdown-menu-links--fade-in"), index * 80);
     });    
@@ -50,7 +52,7 @@ closeDropdownMenuBtn.addEventListener("click", () => {
 
     setTimeout(() => {
         dropdownMenu.classList.remove("dropdown-menu--activated");
-    }, 800);
+    }, 1000);
 } );
 
 
