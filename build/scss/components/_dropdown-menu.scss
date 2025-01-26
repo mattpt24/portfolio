@@ -91,6 +91,7 @@
 
             i {
                 font-size: 1.4rem;
+                color: $clr-dark;
             }
 
             @media screen and (max-width:$mobile) {
@@ -130,6 +131,10 @@
                     overflow: hidden;
                     width: fit-content;
 
+                    @media screen and (max-width:$mobile) {
+                        height: 60px;
+                     }   
+
                     &:hover > a {
                         transition: all .4s ease;
                         transform: translateY(-100%);
@@ -147,7 +152,7 @@
                             font-size: 4rem;
                         }
                         @media screen and (max-width:$mobile) {
-                           font-size: 3rem;
+                           font-size: 2.4rem;
                         }                    
 
                     }
