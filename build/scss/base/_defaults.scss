@@ -5,7 +5,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // border: solid 1px red;
+  
+  @media screen and (max-width:$mobile) {
+    font-family: $ff-body;
+  }
 }
 
 /* Tone down the animation to avoid vestibular motion triggers like scaling or panning large objects. */
@@ -70,11 +73,20 @@ a {
 button {
   border: none;
   outline: none;
+
+  span {
+    color: $clr-dark;
+  }
+
+  i {
+    color: $clr-dark;
+  }
 }
 
 button:hover {
   cursor: pointer;
 }
+
 
 .yellow-txt {
   color: $clr-primary;
