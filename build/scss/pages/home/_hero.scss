@@ -98,7 +98,11 @@
 
         span {
             transform: rotate(30deg);
-            font-size: 1.7rem
+            animation: hand-wave-animation .6s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 1.8s;
+            animation-iteration-count: 1;
+            font-size: 1.7rem;
         }
     }
 
@@ -112,7 +116,9 @@
             font-size: 5rem;
         }
         @media screen and (max-width:$mobile) {
-            font-size: 3rem;
+            font-size: 2.3rem;
+            font-weight: 600!important;
+            letter-spacing: 0;
         }
 
         div {
@@ -139,3 +145,27 @@
 
 }
 
+
+
+
+
+@keyframes hand-wave-animation {
+    0% {
+        transform: rotate(30deg)
+
+    }
+    25% {
+        transform: rotate(40deg)
+
+    }
+    50% {
+        transform: rotate(30deg)
+    }
+    75% {
+        transform: rotate(40deg)
+
+    }
+    100% {
+        transform: rotate(30deg)
+    }
+}
