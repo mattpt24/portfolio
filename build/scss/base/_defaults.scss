@@ -5,10 +5,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
-  @media screen and (max-width:$mobile) {
-    font-weight: 500!important;
-  }
 }
 
 /* Tone down the animation to avoid vestibular motion triggers like scaling or panning large objects. */
@@ -106,4 +102,10 @@ button:hover {
 .current-page {
   color: white!important;
   pointer-events: none;
+}
+
+h1,h2,h3,h4,h5,p,li,a {
+  @media screen and (max-width:$mobile) {
+    font-weight: 500!important;
+  }
 }

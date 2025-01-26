@@ -110,6 +110,11 @@
             justify-content: space-between;
             flex-direction: column;
 
+            @media screen and (max-width:$mobile) {
+                justify-content: flex-start;
+                gap: 6rem;
+            }
+
             .nav-list {
                 transition: all .4s ease;
                 display: flex;
@@ -152,7 +157,7 @@
                             font-size: 4rem;
                         }
                         @media screen and (max-width:$mobile) {
-                           font-size: 2.4rem;
+                           font-size: 2.6rem;
                         }                    
 
                     }
