@@ -48,11 +48,10 @@
             }
             @media screen and (max-width:$mobile) {
                 position: absolute;
-                height: 100vh;
                 width: 100vw;
-                top: 55%;
+
                 left: 0;
-                height: 50vh;
+                height: 100vh;
                 z-index: 10;
             }
         }
@@ -70,9 +69,10 @@
             padding: 1rem;
             background: $clr-light;
             padding: 4rem 2rem;
+            z-index: 10;
         }
         @media screen and (max-width:$mobile) {
-            padding: 9rem 1rem 3.5rem 1rem;
+            padding: 9.5rem 1rem 2.5rem 1rem;
         }
         
 
@@ -116,7 +116,7 @@
             font-size: 5rem;
         }
         @media screen and (max-width:$mobile) {
-            font-size: 2.35rem;
+            font-size: 2.38rem;
             letter-spacing: 0;
         }
 

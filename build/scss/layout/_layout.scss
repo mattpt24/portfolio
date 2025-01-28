@@ -24,6 +24,9 @@
             color: $clr-dark;
 
             @media screen and (max-width:$mobile) {
+               font-weight: 500;
+            }
+            @media screen and (max-width:$mobile) {
                 font-size: 1.5rem;
             }
         }
