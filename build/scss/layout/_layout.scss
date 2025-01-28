@@ -1,0 +1,33 @@
+.content-container {
+    width: 82%;
+    margin: 0 auto;
+    max-width:1700px;
+    padding-top: 12rem;
+
+    @media screen and (max-width:$tablet) {
+        width: 90%;
+    }
+
+
+    .body-text {
+        font-size: 1.3rem;
+        color: rgb(123, 123, 123);
+
+        @media screen and (max-width:$mobile) {
+            font-size: 1.2rem;
+        }
+
+
+        strong {
+            font-size: 1.8rem;
+            font-weight: bolder;
+            color: $clr-dark;
+
+            @media screen and (max-width:$mobile) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+

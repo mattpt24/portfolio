@@ -74,3 +74,18 @@ pageTransitionTriggers.forEach(y => {
           }, 1000);
     })
 })
+
+
+
+
+document.addEventListener("DOMContentLoaded", (event) => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to('.about-main-img', {
+        y: 50,
+        scrollTrigger: {
+            trigger: '.about-main-img',
+            scrub: true,
+        }
+    });
+});
