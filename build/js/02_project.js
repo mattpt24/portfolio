@@ -26,5 +26,3 @@ for(let i = 0; i <= openProjectSidebarBtn.length; i++) {
     }
 }
 
-
-

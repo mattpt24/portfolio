@@ -74,10 +74,10 @@
         
         .close-menu-btn {
             transition: all .3s ease;
-            width: 60px;
-            height: 60px;
+            width: 55px;
+            height: 55px;
             border: solid 2px $clr-dark;
-            border-radius: 100%;
+            border-radius: 10px;
             background: none;
             outline: none;
             box-shadow: 3px 3px 0 $clr-dark;
@@ -195,10 +195,10 @@
 
             .dropdown-menu__social-icon {
                 transition: all .3s ease;
-                height: 55px;
-                width: 55px;
+                height: 50px;
+                width: 50px;
                 border: solid 2px $clr-dark;
-                border-radius: 100%;
+                border-radius: 10px;
                 display: flex;
                 justify-content: center;
                 align-items: center;

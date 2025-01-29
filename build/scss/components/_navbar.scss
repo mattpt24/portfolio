@@ -10,6 +10,10 @@
         align-items: center;
         padding: 1rem;
 
+        @media screen and (max-width:$mobile) {
+            padding: .5rem 1rem;
+        }
+
 
         .site-logo {
             height: 80px;
@@ -34,10 +38,10 @@
 
         .open-menu-btn {
             transition: all .3s ease;
-            height: 70px;
-            width: 70px;
+            height: 55px;
+            width: 55px;
             box-shadow: 3px 3px 0 $clr-dark;
-            border-radius: 100%;
+            border-radius: 10px;
             display: flex;
             justify-content: center;
             align-items: center;

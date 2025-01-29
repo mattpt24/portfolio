@@ -121,12 +121,12 @@ h1,h2,h3,h4,h5,p,li,a {
 .section-title {
   display: inline-block;
   background: $clr-primary;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   color: $clr-dark;
-  letter-spacing:3px;
+  letter-spacing:2px;
   font-size: 1.1rem;
   text-transform: uppercase;
-  border-radius: 10px;
+  border-radius: 50px;
 
   @media screen and (max-width:$laptop) {
     font-size: .9rem;

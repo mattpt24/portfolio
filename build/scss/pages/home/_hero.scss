@@ -79,7 +79,7 @@
 
     .hero-title--sml {
         font-size: 1.4rem;
-        padding: 1rem 1.4rem;
+        padding: 1.2rem 1.5rem;
         background: $clr-primary;
         border-radius: 50px;
         width: fit-content;
@@ -88,7 +88,6 @@
         animation: scale-entrance .5s ease;
         animation-delay: 1.5s;
         animation-fill-mode: forwards;
-        border: solid 2px $clr-dark;
         display: flex;
         align-items: center;
         gap: .6rem;

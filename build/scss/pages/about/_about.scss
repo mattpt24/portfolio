@@ -224,7 +224,7 @@ position: relative;
                             top: 12rem!important;
                         }
                         @media screen and (max-width:$mobile) {
-                            top: 8rem!important;
+                            top: 6rem!important;
                             padding: 4rem 1rem 3rem 1rem;
                         }
 
@@ -299,9 +299,16 @@ position: relative;
                             flex-direction: column;
                             gap: 1.2rem;
 
+                            @media screen and (max-width:$mobile) {
+                                gap: .5rem;
+                            }
 
                             .employment-card__responsibilities-item {
                                 font-size: 1.1rem;
+
+                                @media screen and (max-width:$mobile) {
+                                    font-size: .9rem;
+                                }
 
                                 &::marker {
                                     color: $clr-primary;

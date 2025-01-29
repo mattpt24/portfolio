@@ -1,34 +1,5 @@
 "use strict";
 
-var projectSidebar = Array.from(document.querySelectorAll('.project-sidebar-panel'));
-var projectSidebarContent = Array.from(document.querySelectorAll(".project-sidebar-panel-container"));
-var openProjectSidebarBtn = Array.from(document.querySelectorAll(".open-project-btn"));
-var closeProjectSidebarBtn = Array.from(document.querySelectorAll(".close-project-btn"));
-var _loop = function _loop(i) {
-  if (openProjectSidebarBtn[i]) {
-    openProjectSidebarBtn[i].addEventListener("click", function () {
-      document.body.style.overflow = "hidden";
-      projectSidebar[i].classList.add("sidebar--activated");
-      setTimeout(function () {
-        projectSidebarContent[i].classList.add("sidebar-container--activated");
-      }, 600);
-    });
-    if (closeProjectSidebarBtn[i]) {
-      closeProjectSidebarBtn[i].addEventListener("click", function () {
-        document.body.style.overflow = "auto";
-        projectSidebarContent[i].classList.remove("sidebar-container--activated");
-        setTimeout(function () {
-          projectSidebar[i].classList.remove("sidebar--activated");
-        }, 600);
-      });
-    }
-  }
-};
-for (var i = 0; i <= openProjectSidebarBtn.length; i++) {
-  _loop(i);
-}
-"use strict";
-
 // DROPDOWN MENU OPEN / CLOSE & TAB INDEX ASSIGNMENT 
 
 var dropdownMenu = document.querySelector(".dropdown-menu");
@@ -119,4 +90,33 @@ if (document.querySelector(".about-main-img")) {
       }
     });
   });
+}
+"use strict";
+
+var projectSidebar = Array.from(document.querySelectorAll('.project-sidebar-panel'));
+var projectSidebarContent = Array.from(document.querySelectorAll(".project-sidebar-panel-container"));
+var openProjectSidebarBtn = Array.from(document.querySelectorAll(".open-project-btn"));
+var closeProjectSidebarBtn = Array.from(document.querySelectorAll(".close-project-btn"));
+var _loop = function _loop(i) {
+  if (openProjectSidebarBtn[i]) {
+    openProjectSidebarBtn[i].addEventListener("click", function () {
+      document.body.style.overflow = "hidden";
+      projectSidebar[i].classList.add("sidebar--activated");
+      setTimeout(function () {
+        projectSidebarContent[i].classList.add("sidebar-container--activated");
+      }, 600);
+    });
+    if (closeProjectSidebarBtn[i]) {
+      closeProjectSidebarBtn[i].addEventListener("click", function () {
+        document.body.style.overflow = "auto";
+        projectSidebarContent[i].classList.remove("sidebar-container--activated");
+        setTimeout(function () {
+          projectSidebar[i].classList.remove("sidebar--activated");
+        }, 600);
+      });
+    }
+  }
+};
+for (var i = 0; i <= openProjectSidebarBtn.length; i++) {
+  _loop(i);
 }
