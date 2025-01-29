@@ -1,0 +1,58 @@
+#cta {
+    background: $clr-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6rem 0 5rem 0;
+    position: relative;
+
+    @media screen and (max-width:$mobile) {
+        padding: 5rem 0 4rem 0;
+    }
+
+
+    img {
+        @include image-absolute;
+        opacity: .04;
+    }
+
+    .cta-content-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        width: 80%;
+        text-align: center;
+        position: relative;
+        z-index: 5;
+
+        .cta__title {
+            font-size: 4rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            @media screen and (max-width:$laptop) {
+                font-size: 3rem;
+            }
+            @media screen and (max-width:$mobile) {
+                font-size: 2.2rem;
+            }
+
+
+            .hand-icon {
+                font-size: 3rem;
+                transform: rotate(20deg);
+            }
+        }
+    
+        .btn {
+            width: fit-content;
+        }
+
+    }
+
+
+}

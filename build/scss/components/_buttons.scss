@@ -9,6 +9,12 @@
     align-items: center;
     gap: 1rem;
 
+
+    @media screen and (max-width:$laptop) {
+       font-size: 1.1rem;
+    }
+
+
     &.btn--dark {
         color: $clr-primary;
         background: $clr-dark;

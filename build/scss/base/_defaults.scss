@@ -90,6 +90,10 @@ button:hover {
   color: $clr-primary;
 }
 
+.white-txt {
+  color: white;
+}
+
 .opacity-down {
   opacity: 0.3;
 }
@@ -121,6 +125,9 @@ h1,h2,h3,h4,h5,p,li,a {
   font-size: 1.1rem;
   text-transform: uppercase;
   border-radius: 50px;
-}
 
+  @media screen and (max-width:$laptop) {
+    font-size: .9rem;
+  }
+}
 

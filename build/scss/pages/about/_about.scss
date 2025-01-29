@@ -1,6 +1,5 @@
 #about {
 position: relative;
-overflow: hidden;
 
 .page-banner-texture {
     position: absolute;
@@ -155,5 +154,182 @@ overflow: hidden;
             }
 
         }
+
+
+
+        #experience {
+            padding: 8rem 0 4rem 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 8rem;
+            position: relative;
+
+            @media screen and (max-width:$tablet) {
+                grid-template-columns: 1fr;
+            }
+            @media screen and (max-width:$mobile) {
+                padding-top: 6rem;
+                grid-gap: 0;
+                padding-bottom: 0;
+            }
+
+
+
+            .experience-column {
+
+
+            .experience-title-container {
+                position: sticky;
+                top: 20rem;
+                padding-bottom: 6rem;
+
+                @media screen and (max-width:$laptop) {
+                    top: 15rem;
+                }
+                @media screen and (max-width:$tablet) {
+                    position: relative;
+                    top: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    flex-direction: column;
+                }
+
+
+                h3 {
+                    font-size: 3.8rem;
+                    margin: 2.5rem 0;
+                    letter-spacing: -2px;
+                    
+                    @media screen and (max-width:$mobile) {
+                        font-size: 3.2rem;
+                        font-family: $ff-body;
+                    }
+                }
+
+                .btn {
+                    width: fit-content;
+                    @media screen and (max-width:$mobile) {
+                        width: 100%;
+                    }
+                }
+
+                }
+
+
+
+
+                &.cards-side {
+
+                    .employment-card {
+                        border: solid 2px $clr-dark;
+                        padding: 4rem 2rem 3rem 2rem;
+                        border-radius: 20px;
+                        margin-bottom: 4rem;
+                        position: sticky;
+                        top: 4rem;
+                        background: #efece8;
+
+
+                        @media screen and (max-width:$tablet) {
+                            top: 12rem!important;
+                        }
+                        @media screen and (max-width:$mobile) {
+                            top: 8rem!important;
+                            padding: 4rem 1rem 3rem 1rem;
+                        }
+
+
+                        &:nth-child(1) {
+                            top: 4rem;
+                        }
+
+                        &:nth-child(2) {
+                            top: 5rem;
+                        }
+
+                        &:nth-child(3) {
+                            top: 6rem;
+                        }
+
+                        &:nth-child(4) {
+                            top: 7rem;
+                        }
+
+                        &:nth-child(5) {
+                            top: 8rem;
+                        }
+    
+
+                        .employment-card__date {
+                            background: $clr-primary;
+                            padding: 1rem;
+                            border-radius: 50px;
+                        }
+
+                        .employment-card__title {
+                            font-size: 3.2rem;
+                            margin: 2.5rem 0 1.5rem 0;
+                            letter-spacing: -2px;
+                            @media screen and (max-width:$laptop) {
+                               font-size: 2.8rem;
+                            }
+                            @media screen and (max-width:$mobile) {
+                                font-size: 2.4rem;
+                                font-family: $ff-body;
+                            }
+                        }
+
+                        .employment-card__key-details {
+                            display: flex;
+                            align-items: center;
+                            gap: 1rem;
+
+                            .employment-card__key-detail {
+                                background: #dedcd8;
+                                padding: .8rem 1.4rem;
+                                border-radius: 50px;
+                                display: flex;
+                                align-items: center;
+                                gap: .8rem;
+
+                                i {
+                                    @media screen and (max-width:$mobile) {
+                                       display: none;
+                                    }
+                                }
+                            }
+                        }
+
+                        
+
+                        .employment-card__responsibilities-list {
+                            padding-left: 1.5rem;
+                            margin-top: 2rem;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1.2rem;
+
+
+                            .employment-card__responsibilities-item {
+                                font-size: 1.1rem;
+
+                                &::marker {
+                                    color: $clr-primary;
+                                    font-size: 1.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+
     }
 }
+
+
+
