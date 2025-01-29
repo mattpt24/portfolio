@@ -75,7 +75,9 @@ pageTransitionTriggers.forEach(function (y) {
 var currentDate = new Date();
 var currentYear = currentDate.getFullYear();
 var copyrightYear = document.querySelector(".copyright-year");
-copyrightYear.innerText = currentYear;
+if (copyrightYear) {
+  copyrightYear.innerText = currentYear;
+}
 
 // GSAP - ABOUT IMAGE PARALLAX 
 
@@ -91,6 +93,31 @@ if (document.querySelector(".about-main-img")) {
     });
   });
 }
+var pastSitesOpenBtn = document.querySelector(".back-in-time-btn");
+var pastSitesCloseBtn = document.querySelector(".past-sites-close-btn");
+var pastSitesContainer = document.querySelector(".past-sites");
+var pastSitesTitle = document.querySelector(".past-sites-title");
+var pastSitesBlocks = Array.from(document.querySelectorAll(".past-site"));
+pastSitesOpenBtn.addEventListener("click", function () {
+  pastSitesContainer.classList.add("past-sites--activated");
+  setTimeout(function () {
+    pastSitesTitle.classList.add("past-sites--activated");
+  }, 1000);
+  setTimeout(function () {
+    pastSitesBlocks.forEach(function (x) {
+      x.classList.add("past-sites--activated");
+    });
+  }, 1200);
+});
+pastSitesCloseBtn.addEventListener("click", function () {
+  pastSitesTitle.classList.remove("past-sites--activated");
+  pastSitesBlocks.forEach(function (x) {
+    x.classList.remove("past-sites--activated");
+  });
+  setTimeout(function () {
+    pastSitesContainer.classList.remove("past-sites--activated");
+  }, 1000);
+});
 "use strict";
 
 var projectSidebar = Array.from(document.querySelectorAll('.project-sidebar-panel'));

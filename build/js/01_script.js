@@ -83,8 +83,9 @@ const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
 const copyrightYear = document.querySelector(".copyright-year");
 
+if(copyrightYear) {
 copyrightYear.innerText = currentYear;
-
+}
 
 
 
@@ -108,3 +109,36 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 
 
+
+
+const pastSitesOpenBtn = document.querySelector(".back-in-time-btn");
+const pastSitesCloseBtn = document.querySelector(".past-sites-close-btn");
+const pastSitesContainer = document.querySelector(".past-sites");
+const pastSitesTitle = document.querySelector(".past-sites-title");
+const pastSitesBlocks = Array.from(document.querySelectorAll(".past-site"));
+
+
+pastSitesOpenBtn.addEventListener("click", () => {
+  pastSitesContainer.classList.add("past-sites--activated");
+  setTimeout(() => {
+    pastSitesTitle.classList.add("past-sites--activated");
+  }, 1000)
+  setTimeout(() => {
+    pastSitesBlocks.forEach(x => {
+        x.classList.add("past-sites--activated");
+    })
+  }, 1200)
+})
+
+
+pastSitesCloseBtn.addEventListener("click", () => {
+    pastSitesTitle.classList.remove("past-sites--activated");
+    pastSitesBlocks.forEach(x => {
+        x.classList.remove("past-sites--activated");
+    })
+    setTimeout(() => {
+      pastSitesContainer.classList.remove("past-sites--activated");
+
+    }, 1000)
+  })
+  

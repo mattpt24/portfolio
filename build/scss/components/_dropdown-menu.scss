@@ -74,8 +74,8 @@
         
         .close-menu-btn {
             transition: all .3s ease;
-            width: 55px;
-            height: 55px;
+            width: 50px;
+            height: 50px;
             border: solid 2px $clr-dark;
             border-radius: 10px;
             background: none;
@@ -95,7 +95,7 @@
             }
 
             i {
-                font-size: 1.4rem;
+                font-size: 1.2rem;
                 color: $clr-dark;
             }
 
@@ -243,4 +243,253 @@
     transition: all .3s ease;
     transform: translateX(0);
     opacity: 1!important;
+}
+
+
+
+
+
+
+
+.past-sites {
+    transition: all .5s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 996;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    opacity: 0;
+    pointer-events: none;
+
+
+    @media screen and (max-width:$mobile) {
+        justify-content: flex-start;
+        padding-top: 7rem;
+     }
+
+    button {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        z-index: 999;
+        background: none;
+        outline: none;
+
+        @media screen and (max-width:$mobile) {
+            top: 1rem;
+            right: 1rem;
+         }
+
+        i {
+            color: white;
+            font-size: 2rem;
+            @media screen and (max-width:$mobile) {
+                font-size: 1.6rem;
+             }
+        }
+    }
+
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .3);
+        z-index: 998;
+        overflow: hidden;
+    }
+
+    video {
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 990;
+        transform: scale(1.2);
+
+        @media screen and (max-width:$tablet) {
+            transform: scale(2.6);
+        }
+        @media screen and (max-width:$mobile) {
+            transform: scale(3.6);
+         }
+    }
+
+
+
+    .past-sites-title {
+        transition: all .5s ease;
+        position: relative;
+        z-index: 999;
+        color: white;
+        font-size: 3rem;
+        opacity: 0;
+        display: block;
+        
+        @media screen and (max-width:$mobile) {
+            font-size: 2.6rem;
+         }
+
+         .past-sites--activated {
+            transition: all 1s ease;
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+
+
+
+    .past-sites-blocks {
+        transition: all 1s ease;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+        position: relative;
+        width: 50%;
+
+
+        @media screen and (max-width:$laptop) {
+            width: 55%;
+        }
+        @media screen and (max-width:$tablet) {
+            width: 80%;
+        }
+        @media screen and (max-width:$mobile) {
+           grid-template-columns: 1fr;
+           width: 90%;
+           overflow: scroll;
+           padding-bottom: 2.2rem;
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        &.past-sites-blocks--activated {
+            transition: all 1s ease!important;
+            background: red!important;
+            opacity: 1!important;
+        }
+
+        .past-site {
+            transition: all .5s ease;
+            height: 350px;
+            border-radius: 15px;
+            overflow: hidden;
+            z-index: 999;
+            position: relative;
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: solid 2px $clr-dark;
+            opacity: 0;
+
+            @media screen and (max-width:$desktop) {
+                height: 250px;
+            }
+            @media screen and (max-width:$laptop) {
+                height: 220px;
+            }
+            @media screen and (max-width:$tablet) {
+                height:300px;
+            }
+            @media screen and (max-width:$mobile) {
+                height: 180px;
+                border-radius: 10px;
+             }
+
+
+            &:hover {
+                transition: all .3s ease;
+                border-color: $clr-primary;
+            }
+
+            &:hover > .past-site-overlay {
+                transition: all .3s ease;
+                opacity: 1;
+            }
+
+            
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object: {
+                    fit: cover;
+                    position: center;
+                }
+            }
+
+
+            .past-site-overlay {
+                transition: all .3s ease;
+                position: absolute;
+                top: 0;
+                left:0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,.5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: .4rem;
+                backdrop-filter: blur(10px);
+                opacity: 0;
+
+                @media screen and (max-width:$tablet) {
+                    opacity: 1;
+                    backdrop-filter: blur(2px);
+                }
+
+
+                .past-site-version {
+                    color: $clr-primary;
+                    font-size: 1.8rem;
+                    color: white;
+                }
+
+                a {
+                    transition: all .3s ease;
+                    font-size: .85rem;
+                    padding: .6rem 1rem;
+                    border-radius: 50px;
+                    background: $clr-primary;
+                    color: $clr-dark;
+
+                    &:hover {
+                        transition: all .3s ease;
+                        background: white;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+
+
+
+.past-sites--activated {
+    transition: all 1s ease!important;
+    opacity: 1!important;
+    pointer-events: all!important;
 }
