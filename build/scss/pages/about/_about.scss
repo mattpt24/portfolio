@@ -1,19 +1,6 @@
 #about {
 position: relative;
 
-.page-banner-texture {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 120px;
-    opacity: .03;
-    object: {
-        fit: cover;
-        position: top;
-    }
-}
-
 
     .content-container {
         position: relative;
@@ -39,7 +26,7 @@ position: relative;
                 margin-bottom: 0;
             }
             @media screen and (max-width:$mobile) {
-                font-size: 2.35rem;
+                font-size: 2.3rem;
                 letter-spacing: normal;
                 margin-bottom: 3rem;
             }
@@ -101,6 +88,7 @@ position: relative;
                 &.image-side {
                     overflow: hidden;
                     border-radius: 20px;
+                    border-top-left-radius: 100px;
 
                     @media screen and (max-width:$tablet) {
                         height: 400px;
@@ -168,7 +156,7 @@ position: relative;
                 grid-template-columns: 1fr;
             }
             @media screen and (max-width:$mobile) {
-                padding-top: 6rem;
+                padding-top: 4rem;
                 grid-gap: 0;
                 padding-bottom: 0;
             }

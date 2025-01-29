@@ -234,6 +234,13 @@
 
 // DEVICE MENU ELEMENTS FADE IN ON OPEN
 
+.fade-in {
+    transition: all .3s ease;
+    transform: translateX(-15px);
+}
+
 .dropdown-menu-links--fade-in {
+    transition: all .3s ease;
+    transform: translateX(0);
     opacity: 1!important;
 }

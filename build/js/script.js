@@ -1,6 +1,4 @@
-
-
-// DROPDOWN MENU TOGGLE & TABINDEX ASSIGNMENT 
+// DROPDOWN MENU OPEN / CLOSE & TAB INDEX ASSIGNMENT 
 
 const dropdownMenu = document.querySelector(".dropdown-menu");
 const openDropdownMenuBtn = document.querySelector(".open-menu-btn");
@@ -29,7 +27,7 @@ openDropdownMenuBtn.addEventListener("click", () => {
     setTimeout(() => {
         dropdownMenuImageOverlay.classList.add("image-overlay--removed")
         dropdownLinksToEnter.forEach((x, index) => {
-            setTimeout(() => x.classList.add("dropdown-menu-links--fade-in"), index * 70);
+            setTimeout(() => x.classList.add("dropdown-menu-links--fade-in"), index * 95);
         });
     }, 800);
 } )
@@ -39,7 +37,7 @@ openDropdownMenuBtn.addEventListener("click", () => {
 closeDropdownMenuBtn.addEventListener("click", () => {
     dropdownMenuImageOverlay.classList.remove("image-overlay--removed")
     dropdownLinksToEnter.forEach((x, index) => {
-        setTimeout(() => x.classList.remove("dropdown-menu-links--fade-in"), index * 80);
+        setTimeout(() => x.classList.remove("dropdown-menu-links--fade-in"), index * 95);
     });    
     dropdownMenu.setAttribute("aria-expanded", "false");
     dropdownLinks.forEach(x => {
@@ -54,6 +52,8 @@ closeDropdownMenuBtn.addEventListener("click", () => {
         dropdownMenu.classList.remove("dropdown-menu--activated");
     }, 1000);
 } );
+
+
 
 
 
@@ -77,7 +77,20 @@ pageTransitionTriggers.forEach(y => {
 
 
 
+// DYNAMIC COPYRIGHT YEAR 
 
+const currentDate = new Date();
+const currentYear = currentDate.getFullYear();
+const copyrightYear = document.querySelector(".copyright-year");
+
+copyrightYear.innerText = currentYear;
+
+
+
+
+// GSAP - ABOUT IMAGE PARALLAX 
+
+if(document.querySelector(".about-main-img")) {
 document.addEventListener("DOMContentLoaded", (event) => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -89,3 +102,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
     });
 });
+}
+
+
+
+
+

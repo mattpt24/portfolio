@@ -1,0 +1,14 @@
+footer {
+    padding: 1.5rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: $clr-dark;
+    color: rgb(182, 178, 178);
+
+    @media screen and (max-width: $mobile) {
+        grid-template-columns: 1fr;
+    }
+}
