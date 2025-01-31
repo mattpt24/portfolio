@@ -2,6 +2,7 @@
 position: relative;
 
 
+
     .content-container {
         position: relative;
         z-index: 10;
@@ -80,6 +81,8 @@ position: relative;
 
             .bio-col {
                 position: relative;
+                overflow: hidden;
+
                 p {
                     margin-bottom: 2rem;
                 }
@@ -151,6 +154,7 @@ position: relative;
             grid-template-columns: 1fr 1fr;
             grid-gap: 8rem;
             position: relative;
+
 
             @media screen and (max-width:$tablet) {
                 grid-template-columns: 1fr;
