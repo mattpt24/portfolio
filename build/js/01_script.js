@@ -116,10 +116,12 @@ const pastSitesCloseBtn = document.querySelector(".past-sites-close-btn");
 const pastSitesContainer = document.querySelector(".past-sites");
 const pastSitesTitle = document.querySelector(".past-sites-title");
 const pastSitesBlocks = Array.from(document.querySelectorAll(".past-site"));
+const pastSitesBgVideo = document.querySelector(".past-sites video")
 
 
 pastSitesOpenBtn.addEventListener("click", () => {
   pastSitesContainer.classList.add("past-sites--activated");
+  pastSitesBgVideo.play();
   setTimeout(() => {
     pastSitesTitle.classList.add("past-sites--activated");
   }, 1000)
@@ -133,6 +135,7 @@ pastSitesOpenBtn.addEventListener("click", () => {
 
 pastSitesCloseBtn.addEventListener("click", () => {
     pastSitesTitle.classList.remove("past-sites--activated");
+    pastSitesBgVideo.pause();
     pastSitesBlocks.forEach(x => {
         x.classList.remove("past-sites--activated");
     })
