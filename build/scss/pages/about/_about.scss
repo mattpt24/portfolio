@@ -85,11 +85,26 @@ position: relative;
                 padding-bottom: .5rem;
                 padding-right: .5rem;
 
+                .currently-learning-list {
+                    display: flex;
+                    align-items: center;
+                    gap: .5rem;
+                    margin: 1rem 0 2rem 0;
+
+                .currently-learning-item {
+                    background: rgba(0,0,0,.06);
+                    padding: .6rem 1rem;
+                    border-radius: 30px;
+                    font-size: 1rem;
+                    display: inline-block;
+                }
+
+                }
+
 
                 p {
                     margin-bottom: 2rem;
                 }
-
 
                 &.image-side {
                     overflow: hidden;
