@@ -3,13 +3,14 @@ overflow: hidden;
 
     .bg-graphic {
         position: absolute;
-        top: 22rem;
-        right: 8rem;
+        top: 26rem;
+        right: 9rem;
         width: 150px;
 
         @media screen and (max-width: $laptop) {
             width: 100px;
             top: 26rem;
+            right: 7.5rem;
         }
         @media screen and (max-width: $mobile) {
             top: 10rem;
