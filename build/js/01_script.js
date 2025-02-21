@@ -135,13 +135,15 @@ pastSitesOpenBtn.addEventListener("click", () => {
 
 pastSitesCloseBtn.addEventListener("click", () => {
     pastSitesTitle.classList.remove("past-sites--activated");
-    pastSitesBgVideo.pause();
     pastSitesBlocks.forEach(x => {
         x.classList.remove("past-sites--activated");
     })
     setTimeout(() => {
       pastSitesContainer.classList.remove("past-sites--activated");
-
+      pastSitesBgVideo.pause();
     }, 1000)
   })
   
+
+
+

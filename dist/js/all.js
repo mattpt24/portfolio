@@ -98,8 +98,10 @@ var pastSitesCloseBtn = document.querySelector(".past-sites-close-btn");
 var pastSitesContainer = document.querySelector(".past-sites");
 var pastSitesTitle = document.querySelector(".past-sites-title");
 var pastSitesBlocks = Array.from(document.querySelectorAll(".past-site"));
+var pastSitesBgVideo = document.querySelector(".past-sites video");
 pastSitesOpenBtn.addEventListener("click", function () {
   pastSitesContainer.classList.add("past-sites--activated");
+  pastSitesBgVideo.play();
   setTimeout(function () {
     pastSitesTitle.classList.add("past-sites--activated");
   }, 1000);
@@ -116,6 +118,7 @@ pastSitesCloseBtn.addEventListener("click", function () {
   });
   setTimeout(function () {
     pastSitesContainer.classList.remove("past-sites--activated");
+    pastSitesBgVideo.pause();
   }, 1000);
 });
 "use strict";

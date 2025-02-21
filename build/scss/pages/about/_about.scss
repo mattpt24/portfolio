@@ -82,6 +82,9 @@ position: relative;
             .bio-col {
                 position: relative;
                 overflow: hidden;
+                padding-bottom: .5rem;
+                padding-right: .5rem;
+
 
                 p {
                     margin-bottom: 2rem;
@@ -142,6 +145,7 @@ position: relative;
             .btn {
                 text-align: center!important;
                 margin-top: 3rem;
+                position: relative;
             }
 
         }
