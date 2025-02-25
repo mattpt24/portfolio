@@ -30,7 +30,9 @@ position: relative;
             @media screen and (max-width:$mobile) {
                 font-size: 2.3rem;
                 letter-spacing: normal;
-                margin-bottom: 3rem;
+                margin: 2rem 0;
+                font-family: $ff-heading;
+                font-weight: 800;
             }
 
 
@@ -61,8 +63,18 @@ position: relative;
 
             strong {
                 display: block;
-                margin-top: 2rem;
                 font-family: $ff-body;
+                font-weight: 200!important;
+
+                @media screen and (max-width:$tablet) {
+                    margin-top: 2rem;
+                    font-size: 1.3rem;
+                    color: rgba(0,0,0,.6);
+                }
+                @media screen and (max-width:$mobile) {
+                    margin-top: 0;
+                    font-size: 1.2rem;
+                }
             }
 
 
@@ -83,7 +95,8 @@ position: relative;
                     }
 
                     @media screen and (max-width:$mobile) {
-                        top: -30rem;
+                        top: -25rem;
+                        transform: rotate(-90deg);
                     }
                 }
             }
