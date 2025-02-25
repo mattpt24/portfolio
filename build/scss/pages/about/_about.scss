@@ -22,15 +22,17 @@ position: relative;
                 font-size: 4.8rem;
             }
             @media screen and (max-width:$tablet) {
-                font-size: 3.5rem;
+                font-size: 3.3rem;
                 width: 100%;
                 margin-bottom: 0;
+                font-family: $ff-body;
             }
             @media screen and (max-width:$mobile) {
                 font-size: 2.3rem;
                 letter-spacing: normal;
                 margin-bottom: 3rem;
             }
+
 
             i {
                 @media screen and (max-width:$tablet) {
@@ -55,6 +57,14 @@ position: relative;
                 grid-template-columns: 1fr;
                 grid-gap: 2rem;
             }
+
+
+            strong {
+                display: block;
+                margin-top: 2rem;
+                font-family: $ff-body;
+            }
+
 
             .bg-shape {
                 position: absolute;
