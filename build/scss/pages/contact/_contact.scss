@@ -3,20 +3,42 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
 
     @media screen and (max-width:$laptop) {
         height: auto;
-        padding: 8rem 0;
+        padding: 8rem 0 6rem 0;
     }
     @media screen and (max-width:$tablet) {
         padding: 12rem 0 4rem 0;
     }
+
+
+
+    .bg-graphic {
+        position: absolute;
+        top: 10rem;
+        right: 12rem;
+        animation: infinite-spin 8s linear infinite;
+
+        @media screen and (max-width:$laptop) {
+            top: 9rem;
+            right: 7rem;
+        }
+        @media screen and (max-width:$tablet) {
+            display: none;
+        }
+    }
+
+
 
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 6rem;
     width: 70%;
+    position: relative;
+    z-index: 10;
 
     @media screen and (max-width:$laptop) {
         width: 75%;
@@ -37,9 +59,14 @@
         .body-txt {
             font-size: 1.1rem;
             width: 80%;
-            opacity: .6;
+            color: rgba(0,0,0,.6);
             @media screen and (max-width:$mobile) {
                 width: 100%;
+            }
+
+            .current-day {
+                color: grey;
+                text-decoration: underline;
             }
         }
 
@@ -112,10 +139,11 @@
                     padding: 1rem;
                     outline: none;
                     border: none;
-                    background: none;
+                    background: $clr-light;
                     border: solid 2px $clr-dark;
                     border-radius: 10px;
                     font-size: 1rem;
+
 
                     &:focus {
                         transition: all .3s ease;
@@ -150,4 +178,14 @@
 
 }
 
+}
+
+
+@keyframes infinite-spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

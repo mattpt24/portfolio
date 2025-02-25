@@ -1,2 +1,4 @@
+# Ensure the file is in the root directory of your website
+# Check the path to 404.html and ensure it exists
 
-ErrorDocument 404 /error
+ErrorDocument 404 /404.html
