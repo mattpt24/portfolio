@@ -62,8 +62,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 800!important;
 
   @media screen and (max-width:$tablet) {
-    font-weight: $ff-body;
-    font-weight: 500;
+    font-weight: $ff-heading!important;
+    font-weight: 500!important;
   }
 }
 
