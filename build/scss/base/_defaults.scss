@@ -59,7 +59,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   line-height: 1.2;
   font-family: $ff-heading!important;
-  font-weight: 500!important;
+  font-weight: 800!important;
+
+  @media screen and (max-width:$tablet) {
+    font-weight: $ff-body;
+    font-weight: 500;
+  }
 }
 
 a {
@@ -81,6 +86,13 @@ button {
 
 button:hover {
   cursor: pointer;
+}
+
+
+p,li,a {
+  @media screen and (max-width:$mobile) {
+    font-weight: 500!important;
+  }
 }
 
 
@@ -107,11 +119,7 @@ button:hover {
   pointer-events: none;
 }
 
-p,li,a {
-  @media screen and (max-width:$mobile) {
-    font-weight: 500!important;
-  }
-}
+
 
 
 .section-title {
