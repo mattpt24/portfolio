@@ -121,6 +121,21 @@ pastSitesCloseBtn.addEventListener("click", function () {
     pastSitesBgVideo.pause();
   }, 1000);
 });
+
+//   COPY EMAIL TO CLIPBOARD 
+
+var copyableEmail = document.querySelector(".copyable-email");
+var copyEmailBtn = document.querySelector(".copy-email-btn");
+var myText = document.querySelector(".email");
+var button = document.querySelector(".copy-to-clipboard");
+if (copyEmailBtn) {
+  copyEmailBtn.addEventListener("click", function () {
+    copyableEmail.select();
+    document.execCommand("copy");
+    copyEmailBtn.innerText = "Copied!";
+    copyEmailBtn.classList.add("success");
+  });
+}
 "use strict";
 
 var projectSidebar = Array.from(document.querySelectorAll('.project-sidebar-panel'));

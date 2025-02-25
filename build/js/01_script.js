@@ -145,5 +145,23 @@ pastSitesCloseBtn.addEventListener("click", () => {
   })
   
 
+  
 
 
+//   COPY EMAIL TO CLIPBOARD 
+
+const copyableEmail = document.querySelector(".copyable-email");
+const copyEmailBtn = document.querySelector(".copy-email-btn");
+
+const myText = document.querySelector(".email");
+const button = document.querySelector(".copy-to-clipboard");
+
+
+if(copyEmailBtn) {
+    copyEmailBtn.addEventListener("click", function(){
+    copyableEmail.select();
+    document.execCommand("copy");
+    copyEmailBtn.innerText = "Copied!";
+    copyEmailBtn.classList.add("success");
+});
+}

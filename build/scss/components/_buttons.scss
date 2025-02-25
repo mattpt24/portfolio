@@ -40,6 +40,11 @@
             transform: translate(3px, 3px);
             box-shadow: 0px 0px 0 $clr-dark;
         }
+
+        &.success {
+            transition: all .3s ease;
+            background: $clr-secondary;
+        }
     }
 
 }
