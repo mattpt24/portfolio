@@ -59,10 +59,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   line-height: 1.2;
   font-family: $ff-heading;
+  font-weight: 800;
+
 
   @media screen and (max-width:$tablet) {
-    font-weight: 500;
-    font-family: $ff-body;
+    // font-weight: 500;
+    // font-family: $ff-body;
+    font-weight: 800;
   }
 }
 
