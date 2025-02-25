@@ -28,8 +28,8 @@ position: relative;
                 font-family: $ff-body;
             }
             @media screen and (max-width:$mobile) {
-                font-size: 2.3rem;
-                letter-spacing: normal;
+                font-size: 2.6rem;
+                letter-spacing: -.09rem;
                 margin: 2rem 0;
                 font-family: $ff-heading;
                 font-weight: 800;

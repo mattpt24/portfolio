@@ -93,6 +93,7 @@
         gap: .6rem;
         @media screen and (max-width:$mobile) {
             font-size: 1.2rem;
+            margin-bottom: 1.6rem;
         }
 
         span {
@@ -115,7 +116,7 @@
             font-size: 5rem;
         }
         @media screen and (max-width:$mobile) {
-            font-size: 3rem;
+            font-size: 3.2rem;
             letter-spacing: -.1rem;
             font-family: $ff-heading;
             font-weight: 800;
