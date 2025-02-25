@@ -141,30 +141,32 @@ if (copyEmailBtn) {
 
 var currentDay = new Date().getDay();
 var currentDayContainer = document.querySelector(".current-day");
-var day;
-switch (currentDay) {
-  case 0:
-    day = "Sunday";
-    break;
-  case 1:
-    day = "Monday";
-    break;
-  case 2:
-    day = "Tuesday";
-    break;
-  case 3:
-    day = "Wednesday";
-    break;
-  case 4:
-    day = "Thursday";
-    break;
-  case 5:
-    day = "Friday";
-    break;
-  case 6:
-    day = "Saturday";
+if (currentDayContainer) {
+  var day;
+  switch (currentDay) {
+    case 0:
+      day = "Sunday";
+      break;
+    case 1:
+      day = "Monday";
+      break;
+    case 2:
+      day = "Tuesday";
+      break;
+    case 3:
+      day = "Wednesday";
+      break;
+    case 4:
+      day = "Thursday";
+      break;
+    case 5:
+      day = "Friday";
+      break;
+    case 6:
+      day = "Saturday";
+  }
+  currentDayContainer.innerText = day;
 }
-currentDayContainer.innerText = day;
 "use strict";
 
 var projectSidebar = Array.from(document.querySelectorAll('.project-sidebar-panel'));

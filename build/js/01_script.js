@@ -175,6 +175,8 @@ if(copyEmailBtn) {
 const currentDay = new Date().getDay();
 const currentDayContainer = document.querySelector(".current-day");
 
+if(currentDayContainer) {
+
 let day;
 switch (currentDay) {
   case 0:
@@ -200,3 +202,5 @@ switch (currentDay) {
 }
 
 currentDayContainer.innerText = day;
+
+}
