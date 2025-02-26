@@ -127,10 +127,10 @@
                 gap: 2rem;
                 width: fit-content;
                 
-                @media screen and (max-width:$mobile) {
+                @media screen and (max-width:$laptop) {
                     gap: .5rem;
                 }
-            
+
 
                 .nav-link {
                     transition: all .4s ease;
