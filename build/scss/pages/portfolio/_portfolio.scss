@@ -22,7 +22,7 @@ overflow: hidden;
     .portfolio-titles {
 
         h2 {
-            margin: 4rem 0;
+            margin: 3rem 0 4rem 0;
             @media screen and (max-width: $tablet) {
                 margin: 3rem 0;
             }
@@ -292,7 +292,8 @@ overflow: hidden;
                 margin: 3rem 0;
 
                 .project-sidebar-panel__subheading {
-                    font-size: 2rem;
+                    font-size: 1.8rem;
+                    letter-spacing: -.05rem;
                     margin-bottom: 2rem;
                 }
 

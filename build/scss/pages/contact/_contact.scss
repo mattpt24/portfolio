@@ -53,7 +53,10 @@
     .contact-column {
 
         .section-subtitle {
-            margin: 2rem 0;
+            margin: 3rem 0 2rem 0;
+            @media screen and (max-width:$mobile) {
+                margin: 2rem 0;
+            }
         }
 
         .body-txt {

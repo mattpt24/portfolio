@@ -114,6 +114,17 @@ p,li,a {
 }
 
 
+.txt-underlined {
+  transition: all .3s ease;
+  text-decoration: underline;
+  opacity: .4;
+
+  &:hover {
+    transition: all .3s ease;
+    opacity: .7;
+  }
+}
+
 .current-page {
   color: white!important;
   pointer-events: none;
