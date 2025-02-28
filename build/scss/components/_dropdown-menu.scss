@@ -124,11 +124,14 @@
                 transition: all .4s ease;
                 display: flex;
                 flex-direction: column;
-                gap: 2rem;
+                gap: 1.3rem;
                 width: fit-content;
                 
                 @media screen and (max-width:$laptop) {
-                    gap: .5rem;
+                    gap: 1.2rem;
+                }
+                @media screen and (max-width:$mobile) {
+                    gap: .4rem;
                 }
 
 
@@ -140,9 +143,7 @@
                     height: 80px;
                     overflow: hidden;
                     width: fit-content;
-                    @media screen and (max-width:$laptop) {
-                        height: 70px;
-                     }  
+
                     @media screen and (max-width:$mobile) {
                         height: 60px;
                      }   
@@ -157,12 +158,12 @@
                         font-size: 4.5rem;
                         letter-spacing: -1px;
                         font-family: $ff-heading;
-                        font-weight: 800;
+                        font-weight: 500;
                         display: inline-block;
                         opacity: 0;
                         padding-left: .2rem;
                         @media screen and (max-width:$laptop) {
-                            font-size: 3rem;
+                            font-size: 4rem;
                         }
                         @media screen and (max-width:$tablet) {
                             font-family: $ff-body;
@@ -179,15 +180,15 @@
             }
 
 
-            // ul:hover li {
-            //     transition: all .4s ease;
-            //     opacity: .2;
-            // }
+            ul:hover li {
+                transition: all .4s ease;
+                opacity: .2;
+            }
 
-            // ul li:hover {
-            //     transition: all .4s ease;
-            //     opacity: 1;
-            // }
+            ul li:hover {
+                transition: all .4s ease;
+                opacity: 1;
+            }
 
         }
 
