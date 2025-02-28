@@ -29,7 +29,7 @@
         z-index: 5;
 
         .cta__title {
-            font-size: 4rem;
+            font-size: 3.5rem;
             display: flex;
             align-items: center;
             gap: 1rem;
@@ -39,12 +39,17 @@
             }
             @media screen and (max-width:$mobile) {
                 font-size: 2rem;
+                gap: .5rem;
             }
 
 
             .hand-icon {
                 font-size: 3rem;
                 transform: rotate(20deg);
+                @media screen and (max-width:$mobile) {
+                    margin-left: .5rem;
+                    font-size: 2.6rem;
+                }
             }
         }
     

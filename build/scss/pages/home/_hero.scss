@@ -43,6 +43,9 @@
             top: 0;
             left: 0;
             opacity: .08;
+            @media screen and (max-width:$laptop) {
+                height: 33vh;
+            }
             @media screen and (max-width:$tablet) {
                 height: 100vh;
             }
