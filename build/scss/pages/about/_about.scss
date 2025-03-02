@@ -300,6 +300,9 @@ position: relative;
                             background: $clr-primary;
                             padding: 1rem;
                             border-radius: 50px;
+                            @media screen and (max-width:$mobile) {
+                                font-size: .9rem;
+                            }
                         }
 
                         .employment-card__title {
@@ -310,7 +313,7 @@ position: relative;
                                font-size: 2.8rem;
                             }
                             @media screen and (max-width:$mobile) {
-                                font-size: 2.4rem;
+                                font-size: 2.2rem;
                                 font-family: $ff-body;
                             }
                         }
@@ -351,13 +354,18 @@ position: relative;
 
                             @media screen and (max-width:$mobile) {
                                 gap: 0;
+                                list-style: none;
+                                padding-left: 0;
                             }
 
                             .employment-card__responsibilities-item {
                                 font-size: 1.1rem;
 
+                                @media screen and (max-width:$laptop) {
+                                    font-size: 1rem;
+                                }
                                 @media screen and (max-width:$mobile) {
-                                    font-size: .9rem;
+                                    font-size: .85rem;
                                     margin-bottom: 1rem;
                                 }
 
