@@ -17,13 +17,13 @@ pointer-events: none;
     width: 100%;
     background: rgb(214, 214, 214);
     background: $clr-dark;
-    animation: entrance-blocks-animation 1s ease;
+    animation: entrance-blocks-animation 1s cubic-bezier(.8, 0.02, 0.3, 1);
     animation-fill-mode: forwards;
     animation-delay: .5s;
 
 
     &.entrance-block--activated {
-       animation: entrance-blocks-animation-reverse 1s ease;
+       animation: entrance-blocks-animation-reverse 1s cubic-bezier(.8, 0.02, 0.3, 1);
        animation-fill-mode: forwards;
     }
 
