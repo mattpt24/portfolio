@@ -19,6 +19,10 @@ const autoprefixer = require('gulp-autoprefixer');
 // BABEL
 const babel = require('gulp-babel');
 
+// SITEMAP GENERATOR 
+const sitemap = require('gulp-sitemap');
+
+
 // CONCAT COMBINE JS FILES
 var concat = require('gulp-concat');
 
@@ -73,3 +77,22 @@ exports.combineJS = series(combineJS);
 
 
 exports.default = series(buildStyles, watchCSS, javascript, combineJS);
+
+
+
+
+
+// SITEMAP GENERATOR 
+
+gulp.task('sitemap', async function () {
+
+  return gulp.src(['./**/*.html', '!./node_modules/**'], { // Select all html files, excluding node_modules
+          read: true // Make sure to read the files.
+      })
+      .pipe(sitemap({
+          siteUrl: 'https://mattpersellthompson.com/',
+          changefreq: 'monthly', // optional
+          priority: 0.5 // optional
+      }))
+      .pipe(gulp.dest('./'));
+});
