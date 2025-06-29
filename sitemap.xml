@@ -1,73 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-    <url>
-        
-        <loc>https://mattpersellthompson.com/about.html</loc>
-    
-        
-        <lastmod>2025-03-02T15:36:35.387Z</lastmod>
-    
-        
-        <changefreq>monthly</changefreq>
-    
-        
-        <priority>0.5</priority>
-    
-    </url>
-    <url>
-        
-        <loc>https://mattpersellthompson.com/contact.html</loc>
-    
-        
-        <lastmod>2025-03-02T14:54:01.591Z</lastmod>
-    
-        
-        <changefreq>monthly</changefreq>
-    
-        
-        <priority>0.5</priority>
-    
-    </url>
-    <url>
-        
-        <loc>https://mattpersellthompson.com/</loc>
-    
-        
-        <lastmod>2025-03-02T14:53:46.056Z</lastmod>
-    
-        
-        <changefreq>monthly</changefreq>
-    
-        
-        <priority>0.5</priority>
-    
-    </url>
-    <url>
-        
-        <loc>https://mattpersellthompson.com/portfolio.html</loc>
-    
-        
-        <lastmod>2025-03-02T14:53:20.279Z</lastmod>
-    
-        
-        <changefreq>monthly</changefreq>
-    
-        
-        <priority>0.5</priority>
-    
-    </url>
-    <url>
-        
-        <loc>https://mattpersellthompson.com/success.html</loc>
-    
-        
-        <lastmod>2025-03-02T14:52:58.548Z</lastmod>
-    
-        
-        <changefreq>monthly</changefreq>
-    
-        
-        <priority>0.5</priority>
-    
-    </url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://mattpersellthompson.com/</loc>
+  <lastmod>2025-06-28T22:24:10+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://mattpersellthompson.com/about</loc>
+  <lastmod>2025-06-28T22:24:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mattpersellthompson.com/portfolio</loc>
+  <lastmod>2025-06-28T22:24:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mattpersellthompson.com/contact</loc>
+  <lastmod>2025-06-28T22:24:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mattpersellthompson.com/assets/documents/Matthew%20Persell-Thompson%20Resume%20(2025).pdf</loc>
+  <lastmod>2025-06-28T22:24:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
 </urlset>
