@@ -177,6 +177,7 @@ var _loop = function _loop(i) {
   if (openProjectSidebarBtn[i]) {
     openProjectSidebarBtn[i].addEventListener("click", function () {
       document.body.style.overflow = "hidden";
+      openProjectSidebarBtn[i].setAttribute("aria-expanded", "true");
       projectSidebar[i].classList.add("sidebar--activated");
       setTimeout(function () {
         projectSidebarContent[i].classList.add("sidebar-container--activated");
@@ -185,6 +186,7 @@ var _loop = function _loop(i) {
     if (closeProjectSidebarBtn[i]) {
       closeProjectSidebarBtn[i].addEventListener("click", function () {
         document.body.style.overflow = "auto";
+        openProjectSidebarBtn[i].setAttribute("aria-expanded", "false");
         projectSidebarContent[i].classList.remove("sidebar-container--activated");
         setTimeout(function () {
           projectSidebar[i].classList.remove("sidebar--activated");

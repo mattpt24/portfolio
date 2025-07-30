@@ -8,6 +8,7 @@ for(let i = 0; i <= openProjectSidebarBtn.length; i++) {
     if(openProjectSidebarBtn[i]) {
         openProjectSidebarBtn[i].addEventListener("click", () => {
             document.body.style.overflow = "hidden";
+            openProjectSidebarBtn[i].setAttribute("aria-expanded", "true");
             projectSidebar[i].classList.add("sidebar--activated");
             setTimeout(() => {
                 projectSidebarContent[i].classList.add("sidebar-container--activated");
@@ -17,6 +18,7 @@ for(let i = 0; i <= openProjectSidebarBtn.length; i++) {
         if(closeProjectSidebarBtn[i]) {
         closeProjectSidebarBtn[i].addEventListener("click", () => {
             document.body.style.overflow = "auto";
+            openProjectSidebarBtn[i].setAttribute("aria-expanded", "false");
             projectSidebarContent[i].classList.remove("sidebar-container--activated");
             setTimeout(() => {
                 projectSidebar[i].classList.remove("sidebar--activated");
